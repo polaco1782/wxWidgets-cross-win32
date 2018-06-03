@@ -1,0 +1,16 @@
+## wxWidgets-cross-win32
+
+Statically built wxWidgets library to embed on win32 applications, cross compiled under any GNU/Linux environment.
+
+### Dependencies
+
+You need GNU Minimalist (aka MinGW) 32 bit installed. on debian based distro you can install it by running
+
+    sudo apt install mingw-w64-i686-dev
+
+### Compiling
+
+An example Makefile and C++ source is included. Just run `make` and you should have an Example.exe file
+on the project root. You can test the result binary with wine, running make test.
+
+A precompiled SQLite3 library is also included.
