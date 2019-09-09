@@ -11,7 +11,7 @@ LDFLAGS = -static
 CXXFLAGS = -O3 -s
 
 CXXFLAGS += -I./lib/wx/include/i686-w64-mingw32-msw-unicode-static-3.1 \
-            -I./include/wx-3.1 -I./include -D_FILE_OFFSET_BITS=64 -D__WXMSW__ -mthreads
+            -I./include/wx-3.1 -I./include -D__GXX_ABI_VERSION=1002 -D_FILE_OFFSET_BITS=64 -D__WXMSW__ -mthreads
 
 LDFLAGS += -L./lib -Wl,--subsystem,windows -mwindows \
              ./lib/libwx_mswu-3.1-i686-w64-mingw32.a \
